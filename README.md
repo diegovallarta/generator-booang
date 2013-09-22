@@ -18,7 +18,7 @@ After that follow the steps below.
 
 
 ### App
-Sets up a new MEAN (MongoDB, Expressjs, AngularJS and Node.js) app with Twitter Bootstrap, generating all the boilerplate you need to get started. The app generator also optionally installs Jquery.
+Sets up a new MEAN (MongoDB, Expressjs, AngularJS and Node.js), generating all the boilerplate you need to get started. The app generator also optionally installs Twitter Bootstrap and JQuery.
 
 ## Bower Components
 
