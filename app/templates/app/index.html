@@ -6,14 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title><%= _.camelize(appname) %></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.css">
+        <% if (jquery) { %>
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+        <% } %>
         <!-- endbuild -->
     </head>
     <body ng-app="<%= _.camelize(appname) %>">
@@ -32,9 +34,9 @@
         <script src="libs/angular/angular.js"></script>
 
         <!-- build:js scripts/plugins.js -->
-        <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
         <% if (jquery) { %>
-         <script src="libs/jquery/jquery.js"></script>
+        <script src="libs/jquery/jquery.js"></script>
+        <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
         <% } %>
         <!-- endbuild -->
 

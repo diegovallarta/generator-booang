@@ -38,10 +38,6 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.coffee'],
         tasks: ['coffee:test']
       },
-      styles: {
-        files: ['<%%= yeoman.app %>/css/{,*/}*.css'],
-        tasks: ['copy:styles', 'autoprefixer']
-      },
       livereload: {
         options: {
           livereload: LIVERELOAD_PORT
@@ -52,17 +48,6 @@ module.exports = function (grunt) {
           '{.tmp,<%= yeoman.app %>}/js/{,*/}*.js',
           '<%= yeoman.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
-      }
-    },
-    autoprefixer: {
-      options: ['last 1 version'],
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/styles/',
-          src: '{,*/}*.css',
-          dest: '.tmp/styles/'
-        }]
       }
     },
     express: {
@@ -299,7 +284,6 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'concurrent:server',
-      'autoprefixer',
       'express:livereload',
       'open',
       'watch'
@@ -309,16 +293,15 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'concurrent:test',
-    'autoprefixer',
     'express:test',
-    'karma'
+    'karma',
+    'jshint'
   ]);
 
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
     'concat',
     'copy:dist',
     'cdnify',

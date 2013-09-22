@@ -27,46 +27,21 @@ Booang.prototype.askFor = function askFor() {
     var prompts = [{
         type: 'confirm',
         name: 'jquery',
-        message: 'Would you like to include JQuery?',
+        message: 'Would you like to include Bootstrap and JQuery?',
         default: true
+    },
+    {
+        name: 'appName',
+        message: 'What do you want to call your application?'
     }];
 
     this.prompt(prompts, function (props) {
         this.jquery = props.jquery;
+        this.appname = props.appName;
 
         cb();
     }.bind(this));
 };
-
-Booang.prototype.app = function app() {
-    this.mkdir('public');
-    this.mkdir('public/images');
-    this.mkdir('public/javascripts');
-    this.mkdir('public/stylesheets');
-    this.mkdir('config');
-    this.mkdir('config/environments');
-    this.mkdir('routes');
-    this.mkdir('views');
-
-    this.directory('public');
-    this.directory('routes');
-    this.directory('views');
-    this.directory('config');
-
-    // Frontend
-    this.mkdir('app');
-    this.mkdir('app/js');
-    this.mkdir('app/css');
-    this.mkdir('app/partials');
-    this.mkdir('app/components');
-    this.mkdir('app/libs');
-    this.directory('app');
-    this.mkdir('test');
-    this.mkdir('test/spec');
-    this.mkdir('test/spec/controllers');
-    this.directory('test');
-};
-
 
 Booang.prototype.projectfiles = function projectfiles() {
     // Dotfiles
@@ -91,21 +66,37 @@ Booang.prototype.projectfiles = function projectfiles() {
 
 };
 
-Booang.prototype.writeIndex = function writeIndex() {
+Booang.prototype.app = function app() {
+    this.mkdir('public');
+    this.mkdir('public/images');
+    this.mkdir('public/javascripts');
+    this.mkdir('public/stylesheets');
+    this.mkdir('config');
+    this.mkdir('config/environments');
+    this.mkdir('routes');
+    this.mkdir('views');
 
-    this.indexFile = this.readFileAsString(path.join(this.sourceRoot(),'app/index.html'));
-    this.indexFile = this.engine(this.indexFile, this);
-    
-  var modules = [];
+    this.directory('public');
+    this.directory('routes');
+    this.directory('views');
+    this.directory('config');
 
-  if(!this.jquery){
-    return;  
-  }
-  
-  modules.push('libs/jquery/jquery.js');
-
-  if (modules.length) {
-    this.indexFile = this.appendScripts(this.indexFile, 'scripts/plugins.js', modules);
-  }
+    // Frontend
+    this.mkdir('app');
+    this.mkdir('app/js');
+    this.mkdir('app/js/controllers');
+    this.mkdir('app/js/directives');
+    this.mkdir('app/js/services');
+    this.mkdir('app/css');
+    this.mkdir('app/fonts');
+    this.mkdir('app/img');
+    this.mkdir('app/partials');
+    this.mkdir('app/components');
+    this.mkdir('app/libs');
+    this.directory('app');
+    this.mkdir('test');
+    this.mkdir('test/spec');
+    this.mkdir('test/spec/controllers');
+    this.directory('test');
 };
 
