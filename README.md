@@ -3,7 +3,7 @@
 
 A yoeman generator with angular (v1.2.0-rc.2) and bootstrap (v3) versions.
 
-Based on the MEAN stack generator for Yeoman by W. Lepinski.
+Based on the [MEAN stack](https://github.com/wlepinski/generator-meanstack) generator for Yeoman by W. Lepinski.
 
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed on the latest version.
@@ -13,12 +13,12 @@ Based on the MEAN stack generator for Yeoman by W. Lepinski.
 
 After that follow the steps below.
 
-1. Use the comand `grunt server` to start the application with chrome. 
+1. Use the comand `grunt server` to start the application with built-in preview server with LiveReload on chrome. 
 2. Use the command <code>grunt</code> to generate the optimized files for your application.
 
 
 ### App
-Sets up a new AngularJS app, generating all the boilerplate you need to get started. The app generator also optionally installs Jquery.
+Sets up a new MEAN (MongoDB, Expressjs, AngularJS and Node.js) app with Twitter Bootstrap, generating all the boilerplate you need to get started. The app generator also optionally installs Jquery.
 
 ## Bower Components
 
