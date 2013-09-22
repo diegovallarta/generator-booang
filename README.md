@@ -9,7 +9,7 @@ Based on the [MEAN stack](https://github.com/wlepinski/generator-meanstack) gene
 - Make sure you have [yo](https://github.com/yeoman/yo) installed on the latest version.
     `npm install -g yo`
 - Install the generator: `npm install -g generator-booang`
-- Run: `yo booang`
+- Run: `yo booang` on your new folder app
 
 After that follow the steps below.
 
