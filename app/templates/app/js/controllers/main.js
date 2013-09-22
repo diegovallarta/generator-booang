@@ -2,7 +2,7 @@
 
 angular.module('<%= _.camelize(appname)%>')
 .controller('MainCtrl', ['$scope', function (scope) {
-		$scope.awesomeThings = [
+		scope.awesomeThings = [
 			'HTML5 Boilerplate',
 			'AngularJS',<% if(jquery) {%>
 			'Bootstrap',
@@ -10,5 +10,5 @@ angular.module('<%= _.camelize(appname)%>')
 			'Karma'
 		];
 
-		$scope.title = '<%= _.camelize(appname)%>';
+		scope.title = '<%= _.camelize(appname)%>';
 }]);
