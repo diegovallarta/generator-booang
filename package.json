@@ -1,6 +1,6 @@
 {
     "name": "generator-booang",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Latest Angular and Boostrap generator. Based on the MEAN stack generator for Yeoman. Angular 1.2.0-rc.2 and Bootstrap 3",
     "keywords": [
         "yeoman-generator",
