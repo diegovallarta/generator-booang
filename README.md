@@ -1,7 +1,7 @@
 # generator-booang
 ================
 
-A yoeman generator with angular (v1.2.0-rc.2) and bootstrap (v3) versions.
+A yeoman generator with angular (v1.2.0-rc.2) and bootstrap (v3) versions.
 
 Based on the [MEAN stack](https://github.com/wlepinski/generator-meanstack) generator for Yeoman by W. Lepinski.
 

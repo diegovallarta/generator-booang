@@ -1,37 +1,39 @@
 {
-  "name": "generator-booang",
-  "version": "0.0.2",
-  "description": "Latest Angular and Boostrap generator. Based on the MEAN stack generator for Yeoman. Angular 1.2.0-rc.2 and Bootstrap 3",
-  "keywords": [
-    "yeoman-generator"
-  ],
-  "author": {
-    "name": "Diego Vallarta",
-    "email": "diego.vallarta@gmail.com",
-    "url": "http://www.diegovallarta.com"
-  },
-  "homepage": "https://github.com/diegovallarta/generator-booang",
-  "bugs": "https://github.com/diegovallarta/generator-booang",
-  "main": "app/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/diegovallarta/generator-booang.git"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "dependencies": {
-    "yeoman-generator": "~0.13.4"
-  },
-  "devDependencies": {
-    "mocha": "~1.10.0"
-  },
-  "engines": {
-    "node": ">=0.8.0"
-  },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ]
+    "name": "generator-booang",
+    "version": "0.0.2",
+    "description": "Latest Angular and Boostrap generator. Based on the MEAN stack generator for Yeoman. Angular 1.2.0-rc.2 and Bootstrap 3",
+    "keywords": [
+        "yeoman-generator",
+        "angular",
+        "bootstrap"
+    ],
+    "author": {
+        "name": "Diego Vallarta",
+        "email": "diego.vallarta@gmail.com",
+        "url": "http://www.diegovallarta.com"
+    },
+    "homepage": "https://github.com/diegovallarta/generator-booang",
+    "bugs": "https://github.com/diegovallarta/generator-booang",
+    "main": "app/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/diegovallarta/generator-booang.git"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "dependencies": {
+        "yeoman-generator": "~0.13.4"
+    },
+    "devDependencies": {
+        "mocha": "~1.10.0"
+    },
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ]
 }
